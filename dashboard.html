@@ -18,7 +18,7 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
     crossorigin=""></script>
-    <script src="./js/Script_map.js" defer></script>
+    <script src="./js/weather-script.js" defer></script>
 
 </head>
 
@@ -41,7 +41,7 @@
               <a class="nav-link text-white" href="./diensten.html">Soorten devices</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="./dashboard.html">Dashboard</a>
+              <a class="nav-link text-white active" aria-current="page" href="./dashboard.html">Dashboard</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -57,7 +57,7 @@
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white active" aria-current="page" href="./contact.html">Contact</a>
+              <a class="nav-link text-white "  href="./contact.html">Contact</a>
             </li>
           </ul>
           <form class="d-flex" role="search">
@@ -67,74 +67,34 @@
         </div>
       </div>
     </nav>
-
-
- 
-    <header class="row m-5">
-        <h1 class="col display-2 donker_grijs text-center">Contact</h1>
-      </header>
-
-
-      <div>
-        <div class="container">
-          <div class="row">
-            <main class="col-md-9 pe-3">
-
-              <section id="map" class="row"> 
-                <div id="Map" class="col-12 mb-3"></div>
-              </section>
-      
-              <section id="contact" class="row">
-              <hr>
-              <form>
-              <fieldset class="row g-2 mb-2 mt-2">
-                <legend class="fs-8 fw-bolder pt-3">Contactgegevens</legend>
-                  <div class="row">
-                    <div class="col-md-6 pt-2">
-                      <label for="Naam" class="form-label">Naam
-                      </label>
-                      <input type="text" class="form-control" >
-                    </div>
-                    <div class="col-md-6">
-                      <label for="telefoon" class="col-form-label">Telefoonnummer
-                      </label>
-                      <input type="digits" class="form-control"  >
-                    </div>  
-                    <div class="col-12">
-                      <label for="exampleFormControlInput1" class="form-label">e-mail
-                      </label>
-                      <input type="email" class="form-control" id="exampleFormControlInput1" >
-                    </div>
-                  </div>
-              </fieldset>
-
-              <fieldset class="row g-2 mb-2 mt-2">
-                <legend class="fs-6 fw-bolder pt-3">Ik heb een vraag voor de</legend>
-                  <div class="form-check">
-                    <input class="form-check-input" type="radio" name="contactpersoon" id="contactpersoon1" value="option1" checked>
-                    <label class="form-check-label" for="contactpersoon1">Admin</label>
-                  </div>
-                  <div class="form-check">
-                    <input class="form-check-input" type="radio" name="contactpersoon" id="contactpersoon2" value="option2">
-                    <label class="form-check-label" for="contactpersoon2">Webdesigner</label>
-                  </div>
-                  <p></p>
-                  <div class="form-group">
-                    <label for="exampleFormControlTextarea1">Stel hier uw vraag</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                  </div>      
-              </fieldset>
-              <hr>
-              <div class="col-12">
-              <button type="button" class="btn btn-primary">verzenden</button>
-              </div>
-          </form>
-       </section>
-      <hr>
-  </main>
-        
-  <footer class="container-fluid text-center h6 small p-4 oranje">&copy; 2024, Kelvin Chen s153420</footer>
-  </body>
+    <body>
+        <header class="row m-5">
+            <h1 class="col display-2 donker_grijs text-center">Dashboard</h1>
+          </header>
     
-</html>
-     
+    
+          <div>
+            <div class="container">
+                <div class="row justify-content-center">
+                <main class="col-4">
+    
+    <div id="weather-container">
+        <h2 class="row justify-content-center">Weer</h2>
+        <input type="text" id="city" placeholder="Kies een stad">
+        <button class="" onclick="getWeather()">zoeken</button>
+       
+        <img id="weather-icon" alt="Weather Icon">
+
+        <div id="temp-div"></div>
+
+        <div id="weather-info"></div>
+
+        <div id="hourly-forecast"></div>
+    </div>
+    <script src="./js/weather-script.js"></script>
+    <hr>
+    <footer class="container-fluid text-center h6 small p-4 oranje">&copy; 2024, Kelvin Chen s153420</footer>
+
+    </body>
+
+    </html>
