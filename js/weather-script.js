@@ -64,7 +64,7 @@ function displayWeather(data) {
 function displayHourlyForecast(hourlyData) {
     const hourlyForecastDiv = document.getElementById('hourly-forecast');
 
-    const next24Hours = hourlyData.slice(0, 8); // Display the next 24 hours (3-hour intervals)
+    const next24Hours = hourlyData.slice(0, 10); // Display the next 24 hours (3-hour intervals)
 
     next24Hours.forEach(item => {
         const dateTime = new Date(item.dt * 1000); // Convert timestamp to milliseconds
