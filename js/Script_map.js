@@ -1,4 +1,4 @@
-let map = L.map('Map').setView([51.221311, 4.399174], 18);
+let map = L.map('Map').setView([51.21394, 4.420069], 15);
 
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 20,
@@ -6,4 +6,4 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 }).addTo(map);
 
 
-let Marker = L.marker([51.221311, 4.399174]).addTo(map);
+let Marker = L.marker([51.21394, 4.42006]).addTo(map);
