@@ -18,7 +18,7 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
     crossorigin=""></script>
-    <script src="./js/Script_map.js" defer></script>
+    <script src="./js/script-map.js" defer></script>
 
 </head>
 
@@ -47,9 +47,9 @@
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="./camera.html">camera's</a></li>
                 <li><a class="dropdown-item" href="./verlichting.html">verlichting</a></li>
-                <li><a class="dropdown-item" href="./Thermostaten.html">thermostaten</a></li>
-                <li><a class="dropdown-item" href="./Luidsprekers.html">luidsprekers</a></li>
-                <li><a class="dropdown-item" href="./Stopcontact.html">stopcontacten</a></li>
+                <li><a class="dropdown-item" href="./thermostaten.html">thermostaten</a></li>
+                <li><a class="dropdown-item" href="./luidsprekers.html">luidsprekers</a></li>
+                <li><a class="dropdown-item" href="./stopcontact.html">stopcontacten</a></li>
                 <li><a class="dropdown-item" href="./weerstation.html">Weerstation</a></li>
               </ul>
             </li>
@@ -69,23 +69,22 @@
  
     <header class="row m-5">
         <h1 class="col display-2 donker_grijs text-center">Contact</h1>
-      </header>
-
-
-      <div>
-        <div class="container">
-          <div class="row">
-            <main class="col-12">
+    </header>
+     
+      <div class="container">
+        <div class="row">
+          <main class="col-12">
+            <section id="contact" class="row">
 
               <section id="map" class="row"> 
                 <div id="Map" class="col-12 mb-3"></div>
               </section>
       
-              <section id="contact" class="row">
               <hr>
+
               <form>
-              <fieldset class="row g-2 mb-2 mt-2">
-                <legend class="fs-8 fw-bolder pt-3">Contactgegevens</legend>
+                <fieldset class="row g-2 mb-2 mt-2">
+                  <legend class="fs-8 fw-bolder pt-3">Contactgegevens</legend>
                   <div class="row">
                     <div class="col-md-6 pt-2">
                       <label for="Naam" class="form-label">Naam
@@ -103,35 +102,35 @@
                       <input type="email" class="form-control" id="exampleFormControlInput1" >
                     </div>
                   </div>
-              </fieldset>
+                </fieldset>
 
-              <fieldset class="row g-2 mb-2 mt-2">
-                <legend class="fs-6 fw-bolder pt-3">Ik heb een vraag voor de</legend>
-                  <div class="form-check">
-                    <input class="form-check-input" type="radio" name="contactpersoon" id="contactpersoon1" value="option1" checked>
-                    <label class="form-check-label" for="contactpersoon1">Admin</label>
-                  </div>
-                  <div class="form-check">
-                    <input class="form-check-input" type="radio" name="contactpersoon" id="contactpersoon2" value="option2">
-                    <label class="form-check-label" for="contactpersoon2">Webdesigner</label>
-                  </div>
-                  <p></p>
-                  <div class="form-group">
-                    <label for="exampleFormControlTextarea1">Stel hier uw vraag</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                  </div>      
-              </fieldset>
-              <hr>
-              <div class="col-12">
-              <button type="button" class="btn btn-primary">verzenden</button>
-              </div>
-          </form>
-       </section>
-      <hr>
-  </main>
-        
-  <footer class="container-fluid text-center h6 small p-4 oranje">&copy; 2024, Kelvin Chen s153420</footer>
-  </body>
-    
+                <fieldset class="row g-2 mb-2 mt-2">
+                  <legend class="fs-6 fw-bolder pt-3">Ik heb een vraag voor de</legend>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="contactpersoon" id="contactpersoon1" value="option1" checked>
+                        <label class="form-check-label" for="contactpersoon1">Admin</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="contactpersoon" id="contactpersoon2" value="option2">
+                      <label class="form-check-label" for="contactpersoon2">Webdesigner</label>
+                    </div>
+                    <p></p>
+                    <div class="form-group">
+                      <label for="exampleFormControlTextarea1">Stel hier uw vraag</label>
+                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>      
+                </fieldset>
+                <hr>
+                <div class="col-12">
+                  <button type="button" class="btn btn-primary">verzenden</button>
+                </div>
+              </form>
+            </section>
+          </main>
+        </div>
+      </div>
+      <hr>  
+      <footer class="container-fluid text-center h6 small p-4 oranje">&copy; 2024, Kelvin Chen s153420</footer>
+</body>
 </html>
      
