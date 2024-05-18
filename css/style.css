@@ -11,14 +11,18 @@ html, body {
   }
   
   
-  .donker_grijs{
+  .donker_blauw{
       color: #143447
   }
   .oranje{
       color: #FE7C00
   }
-  
-  
+  .btn-primary{
+      background-color: #FE7C00;
+  }
+  .btn-outline-primary{
+      background-color: #FE7C00;
+  }
   
 #weather-container {
     background: rgba(255, 255, 255, 0.3);
@@ -44,7 +48,7 @@ input {
 
 
 button {
-  background: #143447;
+  background: #FE7C00;
   color: rgb(255, 255, 255);
   padding: 10px;
   border: none;

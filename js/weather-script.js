@@ -1,11 +1,7 @@
 function getWeather() {
     const apiKey = 'ff830e42acf2fb1e90924aa824b9938b';
     const city = document.getElementById('city').value;
-
-    if (!city) {
-        alert('Kies een locatie');
-        return;
-    }
+    
 
     const currentWeatherUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`;
     const forecastUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}`;
